@@ -1,9 +1,15 @@
 import pandas as pd
-ex_data = pd.read_excel('groups.xlsx')
+from students import students_list
+
+
+data = pd.read_excel('groups.xlsx')
+
+
+
+mydata = data[["фио", "группа"]]
+
+print(mydata.values.tolist())
 
 
 
 
-
-
-print(ex_data['фио'].values.tolist())
